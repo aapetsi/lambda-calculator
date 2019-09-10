@@ -1,9 +1,9 @@
 import React from "react";
 
-const NumberButton = ({ number, id }) => {
+const NumberButton = ({ number, id, handleClick }) => {
   return (
     // <div>
-    <button class="numbers" id={id}>
+    <button onClick={handleClick} className="btn-display" id={id}>
       {number}
     </button>
     // </div>
